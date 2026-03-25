@@ -10,7 +10,6 @@ Simulated enterprise network with two sites (Hub & Spoke), focused on routing, V
 <li>1. Project Overview</li>
 <li>2. Network Design</li>
 <li>3. Configuration & Security</li>
-<li>4. Troubleshooting</li>
 </ul>
 
 <h2>1. Project Overview</h2>
@@ -200,29 +199,6 @@ interface GigabitEthernet1/0/2
 </pre>
 
 <hr>
-
-<h2>4. Troubleshooting</h2>
-
-<h3>Scenarios</h3>
-
-<p><strong>VPN Issue</strong></p>
-<ul>
-<li>Tunnel down</li>
-<li>Cause: NAT / policy misconfiguration</li>
-</ul>
-
-<p><strong>SNAT / DNAT</strong></p>
-<ul>
-<li>Analyzed using Wireshark and sniffer</li>
-<li>Issue: incorrect VIP usage</li>
-</ul>
-
-<p><strong>BGP</strong></p>
-
-<pre>
-get router info bgp summary
-get router info routing-table all
-</pre>
 
 <h3>Problems & Solutions</h3>
 
